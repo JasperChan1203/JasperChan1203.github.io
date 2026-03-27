@@ -8,14 +8,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
-  <!-- Lucide icons (lightweight, clean) -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
+
+  <!-- ===== HERO BANNER ===== -->
+  <header class="hero-banner">
+    <div class="hero-bg-logo"></div>
+    <div class="hero-inner">
+      <img src="school.png" alt="CUHK-Shenzhen" class="hero-school-logo" />
+      <div class="hero-text">
+        <div class="hero-school-name">The Chinese University of Hong Kong, Shenzhen</div>
+        <div class="hero-dept">School of Science and Engineering</div>
+      </div>
+    </div>
+  </header>
+
   <!-- ===== NAV ===== -->
   <nav class="toc-nav">
     <div class="toc-inner">
-      <span class="toc-name">Jianpeng Chen</span>
+      <span class="toc-name">Jianpeng Chen · 陈建鹏</span>
       <div class="toc-links">
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
@@ -30,7 +42,6 @@
 
     <!-- ===== PROFILE ===== -->
     <section class="profile">
-      <div class="profile-bg-logo"></div>
       <div class="profile-photo">
         <img src="Poster_In_WATOC.jpg" alt="Poster In WATOC" />
       </div>
@@ -208,7 +219,6 @@
 
   <script>lucide.createIcons();</script>
   <script>
-    // Highlight active nav link on scroll
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.toc-links a');
     const observer = new IntersectionObserver(entries => {
