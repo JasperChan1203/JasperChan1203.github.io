@@ -468,6 +468,30 @@ footer {
 }
 
 /* ===========================
+   Blogs
+=========================== */
+.blogs-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 0;
+  color: var(--muted);
+}
+
+.blogs-empty-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--border);
+}
+
+.blogs-empty p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ===========================
    Sticky Nav / TOC
 =========================== */
 .toc-nav {
