@@ -59,11 +59,13 @@ a:hover { text-decoration: underline; }
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
-  width: 52px;
-  height: 52px;
-  background: url('school_transparent.png') center / contain no-repeat;
-  opacity: 0.9;
+  width: 46px;
+  height: 46px;
+  background: url('school.png') center / 90% no-repeat white;
+  border-radius: 50%;
+  opacity: 0.92;
   pointer-events: none;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.15);
 }
 
 .toc-inner {
