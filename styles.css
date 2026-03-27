@@ -139,7 +139,6 @@ a:hover { text-decoration: underline; }
   margin-bottom: 40px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-top: 3px solid var(--cuhk-purple);
   border-radius: var(--radius);
   padding: 32px 36px;
   box-shadow: var(--shadow);
@@ -274,9 +273,7 @@ a:hover { text-decoration: underline; }
   color: var(--muted);
   margin-bottom: 18px;
   padding-bottom: 10px;
-  padding-left: 10px;
   border-bottom: 1px solid var(--border);
-  border-left: 3px solid var(--cuhk-purple);
 }
 
 .section-icon {
@@ -406,8 +403,8 @@ a:hover { text-decoration: underline; }
   left: 12px;
   top: 8px;
   bottom: 8px;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--cuhk-purple), rgba(74,28,92,0.2));
+  width: 1px;
+  background: var(--border);
 }
 
 .timeline-item {
@@ -425,14 +422,14 @@ a:hover { text-decoration: underline; }
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #f3e8ff;
-  border: 2px solid var(--cuhk-purple);
+  background: var(--accent-light);
+  border: 2px solid var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dot-icon { width: 13px; height: 13px; color: var(--cuhk-purple); }
+.dot-icon { width: 13px; height: 13px; color: var(--accent); }
 
 .timeline-header {
   display: flex;
