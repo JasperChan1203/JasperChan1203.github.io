@@ -12,6 +12,19 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
+  <!-- ===== NAV ===== -->
+  <nav class="toc-nav">
+    <div class="toc-inner">
+      <span class="toc-name">Jianpeng Chen</span>
+      <div class="toc-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#teaching">Teaching</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
 
     <!-- ===== PROFILE ===== -->
@@ -53,8 +66,7 @@
 
     <div class="main-content">
 
-      <!-- ===== ABOUT ===== -->
-      <section class="card">
+      <section class="card" id="about">
         <h2 class="section-title"><i data-lucide="user-round" class="section-icon"></i>About</h2>
         <p>
           I am a Ph.D. student in Chemistry at the Chinese University of Hong Kong, Shenzhen (CUHK-Shenzhen),
@@ -69,8 +81,7 @@
         </p>
       </section>
 
-      <!-- ===== PUBLICATIONS ===== -->
-      <section class="card">
+      <section class="card" id="publications">
         <h2 class="section-title"><i data-lucide="book-open" class="section-icon"></i>Publications</h2>
         <ul class="pub-list">
 
@@ -110,8 +121,7 @@
         </ul>
       </section>
 
-      <!-- ===== EDUCATION ===== -->
-      <section class="card">
+      <section class="card" id="education">
         <h2 class="section-title"><i data-lucide="school" class="section-icon"></i>Education</h2>
         <ul class="timeline">
 
@@ -153,8 +163,7 @@
         </ul>
       </section>
 
-      <!-- ===== TEACHING ===== -->
-      <section class="card">
+      <section class="card" id="teaching">
         <h2 class="section-title"><i data-lucide="presentation" class="section-icon"></i>Teaching</h2>
         <p class="teaching-intro"><i data-lucide="building-2" class="inline-icon"></i>Teaching Assistant · CUHK(SZ)</p>
         <ul class="teaching-list">
@@ -185,5 +194,18 @@
   </div><!-- end container -->
 
   <script>lucide.createIcons();</script>
+  <script>
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.toc-links a');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
 </body>
 </html>
