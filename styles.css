@@ -51,10 +51,30 @@ a:hover { text-decoration: underline; }
    Profile Header
 =========================== */
 .profile {
+  position: relative;
   display: flex;
   gap: 36px;
   align-items: flex-start;
   margin-bottom: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 36px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.profile-bg-logo {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 260px;
+  background: url('school.png') center/contain no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  user-select: none;
 }
 
 .profile-photo {
