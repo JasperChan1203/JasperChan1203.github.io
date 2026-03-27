@@ -172,6 +172,11 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 
+.github-cat-icon {
+  width: 16px;
+  height: 16px;
+}
+
 /* ===========================
    Cards
 =========================== */
