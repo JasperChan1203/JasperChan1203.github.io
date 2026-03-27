@@ -61,7 +61,7 @@ a:hover { text-decoration: underline; }
   transform: translateY(-50%);
   width: 52px;
   height: 52px;
-  background: url('school.png') center / contain no-repeat;
+  background: url('school_transparent.png') center / contain no-repeat;
   opacity: 0.9;
   pointer-events: none;
 }
